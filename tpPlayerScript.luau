@@ -4,8 +4,11 @@
 
 local place = CFrame.new(0, 0, 0) -- Put Positon/CFrame of where you want the player to be teleported
 
-script.Parent.Touched:Connect(function(bp)
+local function tpPlayer(bp)
 	if bp.Parent:FindFirstChild("Humanoid") then
 		bp.Parent:FindFirstChild("HumanoidRootPart").CFrame = place
 	end
-end)
+end
+
+script.Parent.Touched:Connect(tpPlayer)
+
