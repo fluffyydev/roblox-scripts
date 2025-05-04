@@ -1,3 +1,9 @@
+-- made by fluffy :3
+
+-- Put this in either ServerScriptService or Workspace
+-- Below put in the name of the team you want to not collide with the walls also put the path to the folder or model with the walls you don't want the team to collide with
+
+
 local allowedTeamName = "Host" -- The team allowed to pass through the walls
 local wallsFolder = game:GetService("Workspace"):FindFirstChild("Walls") -- Folder of all the walls
 
